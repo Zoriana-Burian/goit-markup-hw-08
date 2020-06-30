@@ -1,0 +1,198 @@
+.form {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 40px;
+    width: 528px;
+
+  &-field {
+    position: relative;
+    display: block;
+    
+}  
+ &-input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 28px;
+    padding: 12px 18px 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+} 
+
+ &-label {
+    position: absolute;
+    margin: 0;
+   
+    top: 30%;
+    left: 48px;
+    transform: translateY(-30%);
+
+    transition: transform 250ms linear;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+}
+
+&-input:focus + &-label, &-input:not(:placeholder-shown) + &-label  {
+    color:$accent-color;
+    transform: translate(-30px, -43px);  
+} 
+}
+
+.form-input:focus ~ .form-icon {
+    fill:$accent-color;
+}
+
+.form-icon {
+    
+    position: absolute;
+    top: 30%;
+    left: 19px;
+    transform: translateY(-30%);
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   
+} 
+
+.form-coment {
+    display: block;
+    position: relative;
+    align-items: center;
+}
+.form-textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-textarea:focus + .coment-text, .form-textarea:not(:placeholder-shown) + .coment-text {
+    color:$accent-color;
+    transform: translate(-10px, -38px);
+}
+
+textarea {
+    resize: none;
+}
+
+.coment-text {
+    position: absolute;
+    top: 10%;
+    left: 16px;
+
+    transform: translateY(-10%);
+
+    transition: transform 250ms linear;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
+}
+
+
+.form-text {
+
+margin-bottom: 30px;
+   
+font-size: 20px;
+line-height: 1.15;
+letter-spacing: 0.03em;
+text-align: center;
+
+color:$title-text-color;
+}
+
+.form-checkbox {
+ 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    
+    &-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    
+    border: 1px solid $title-text-color;
+    border-radius: 2px;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+
+.form-checkbox:checked ~ .checkbox-icon {
+    background-color:$accent-color;
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color:$accent-color;
+
+}
+
+.form-agreement {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;  
+    
+}
+
+
+
+.button-submit {
+    margin-top: 30px;
+    padding: 10px 55px;
+    background-color:$accent-color;
+    color:$second-title-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border:$accent-color;
+    
+ 
+}
+
+.button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:$primary-bg-colot;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close {
+    width: 11px;
+    height: 11px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+    fill:$accent-color; 
+}
+}
+
