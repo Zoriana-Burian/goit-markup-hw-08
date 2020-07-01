@@ -4,11 +4,30 @@
 
 
 .page-footer .container {
-   /* display: flex;*/
-    padding-top: 48px;
-    padding-bottom: 28px;
+   @media screen and (min-width:768px) {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   
+   @media screen and (max-width:1199px) {
+       text-align: center;
+   
+   }
+
+    padding-top: 60px;
+    padding-bottom: 60px;
     justify-content: space-between;
 
+}
+
+.contact-info {
+    @media screen and (min-width:480px) {
+        margin-bottom: 60px;  
+    }
+    @media screen and (min-width:768px) {
+        margin-right: 165px;  
+    }
 }
 
 .footer-logo {
@@ -28,8 +47,8 @@
 }
 
 .address-list {
-    /*display: flex;*/
-   /* flex-direction: column;*/
+   display: flex;
+   flex-direction: column;
  
   .text {
     margin-top: 10px;
@@ -59,7 +78,11 @@
 }
 }
 
-
+.subscription-info {
+    @media screen and (min-width:480px) {
+        margin-bottom: 60px;  
+    }
+}
 
 .subscription-text {
     margin-top: 0;
@@ -76,7 +99,9 @@
 
 
 .social-network {
-    display: flex;
+   display: inline-flex;
+    
+   
 
    .item:not(:last-child) {
     margin-right: 10px;  
@@ -91,6 +116,7 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    
    
 
     color:$second-title-color;
@@ -111,11 +137,13 @@
     width: 20px;
     height: 20px;
     fill:$primary-bg-colot;
+    
 }
 
 .signature {
-    /*display: flex;*/
+    display: flex;
     flex-direction: column;
+   
 
 }
 
@@ -145,11 +173,15 @@ align-items: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: unset;
+
+    @media screen and (min-width:480px) {
+        margin-bottom: 20px;  
+    }
 }
 
 
 .button-fotter {
-    /*display: inline-flex;*/
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     text-align: center;
