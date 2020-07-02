@@ -26,13 +26,34 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-width: 528px;
-    min-height: 581px;
+    max-width: 450px;
+    /*min-height: 581px;*/
+    width: 100%;
     background-color:$primary-bg-colot; 
 
     padding: 0; 
     
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+
+    @media screen and (min-width:768px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width:1200px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    
+        max-width: 528px;
+        width: 100%;
+        transform: translate(-50%, -50%);
+      }
+
+
+    
 }
 
