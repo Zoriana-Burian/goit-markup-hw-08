@@ -139,7 +139,7 @@ color:$title-text-color;
     height: 15px;
     margin-right: 8px;
     
-    border: 1px solid $title-text-color;
+    border: 0.2px solid $title-text-color;
     border-radius: 2px;
 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -158,9 +158,14 @@ color:$title-text-color;
 
 .form-agreement {
     margin: 0;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.01em;  
+
+    @media screen and(min-width:1200px) {
+        font-size: 14px;
+       line-height: 1.7;
+    }
     
 }
 
