@@ -42,7 +42,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1600px;
+    width: 1200px;
   }
 }
 
@@ -82,8 +82,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   align-items: center;
 }
 
@@ -113,14 +114,6 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 60px;
-  /* @media screen and(min-width:768px) {
-        display: flex;
-    }
-    
-    margin-left: 86px;*/
-  /*.item:not(:last-child) {
-    margin-right: 50px;
-}*/
 }
 
 @media screen and (min-width: 768px) {
@@ -1409,16 +1402,6 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .card-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
 .card-list .title {
   color: #212121;
   margin-top: 0px;
@@ -1472,7 +1455,7 @@ textarea {
 }
 
 @media screen and (min-width: 1200px) {
-  .card-list item:nth-child(3n) {
+  .card-list .item:nth-child(3n) {
     margin-right: 0;
   }
   .card-list .item:nth-last-child(-n + 3) {
