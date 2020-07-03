@@ -4,10 +4,6 @@
         flex-wrap: wrap;
     }
 
-    @media screen and(min-width:1200px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
     
 
     .title {
@@ -62,7 +58,7 @@
 }
 
 @media screen and(min-width:1200px) {
-    item:nth-child(3n) {
+    .item:nth-child(3n) {
     margin-right: 0;
 }
   .item:nth-last-child(-n + 3) {
